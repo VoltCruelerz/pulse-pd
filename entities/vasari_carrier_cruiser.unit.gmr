@@ -1,0 +1,91 @@
+{
+    // I'd really like to use this, but these angles are nonsense.
+    // "attack": {
+    //     "attack_pattern_definitions": [
+    //         {
+    //             "type": "circle_strafe",
+    //             "angle_range": [
+    //                 -180,
+    //                 180
+    //             ]
+    //         }
+    //     ]
+    // },
+    "ai": {
+        "priority_bonus_per_attack_target_type": {
+            "fighter_strikecraft": 5,
+            "bomber_strikecraft": 5,
+            "torpedo": 4
+        },
+        "behaviors": [
+            "auto_attack_all"
+        ],
+        "targets_to_ignore_filter_id": "strikecraft_and_torpedo_units"
+    },
+    "ai_attack_target": {
+        "attack_priority": 50,
+        "is_always_a_threat": true,
+        "attack_target_types": [
+            "carrier_cruiser"
+        ]
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "vasari_carrier_cruiser_point_defense_pulse_beam",
+                "mesh_point": "child.pdpulse_cap_barrel.0",
+                "weapon_position": [
+                    48.017788,
+                    -8.671081,
+                    87.814568
+                ],
+                "forward": [
+                    -0.086824,
+                    -0.087156,
+                    0.992404
+                ],
+                "up": [
+                    0.561578,
+                    0.818526,
+                    0.121017
+                ],
+                "yaw_arc": {
+                    "min_angle": -120,
+                    "max_angle": 120
+                },
+                "pitch_arc": {
+                    "min_angle": -65,
+                    "max_angle": 5
+                }
+            },
+            {
+                "weapon": "vasari_carrier_cruiser_point_defense_pulse_beam",
+                "mesh_point": "child.pdpulse_cap_barrel.1",
+                "weapon_position": [
+                    -48.973885,
+                    -8.759272,
+                    87.814575
+                ],
+                "forward": [
+                    0.052204,
+                    -0.111397,
+                    0.992404
+                ],
+                "up": [
+                    -0.577092,
+                    0.807663,
+                    0.121017
+                ],
+                "yaw_arc": {
+                    "min_angle": -120,
+                    "max_angle": 120
+                },
+                "pitch_arc": {
+                    "min_angle": -65,
+                    "max_angle": 5
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    }
+}

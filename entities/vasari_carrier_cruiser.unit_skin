@@ -1,0 +1,111 @@
+{
+    "version": 0,
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 29199.93804,
+            "min_camera_distance": 648.887512,
+            "gui": {
+                "hud_icon": "vasari_carrier_cruiser_hud_icon",
+                "hud_monochrome_icon": "vasari_carrier_cruiser_main_view_icon",
+                "hud_button_icon": "vasari_carrier_cruiser_hud_button_icon",
+                "tooltip_icon": "vasari_carrier_cruiser_tooltip_icon",
+                "name": "vasari_carrier_cruiser_name",
+                "description": "vasari_carrier_cruiser_description"
+            },
+            "unit_mesh": {
+                "mesh": "vasari_carrier_cruiser",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "child_mesh_alias_bindings": {
+                "map": [
+                    [
+                        "vasari_asset_medbeam_cap_barrel_0",
+                        {
+                            "mesh": "vasari_asset_medbeam_cap_barrel_0",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    ]
+                ]
+            },
+            "main_view_icon": {
+                "group": "ship",
+                "icon": "vasari_carrier_cruiser_main_view_icon",
+                "selected_icon": "vasari_carrier_cruiser_main_view_icon_selected",
+                "sub_selected_icon": "vasari_carrier_cruiser_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "exhaust_particle_effect": "Exhaust_FrigatePhaseCarrier",
+                "hyperspace_effects": {
+                    "charge_effect": "vasari_cruiser_portal_charge_up",
+                    "charge_effect_between_stars": "Hyperspace_Vasari_Frigate_Chargeup_Interstellar",
+                    "charge_effect_destabalized": "Hyperspace_Vasari_Frigate_Chargeup_Unstable",
+                    "travel_effect": "vasari_cruiser_portal_travel",
+                    "travel_effect_between_stars": "Hyperspace_Vasari_Frigate_Travel_Interstellar",
+                    "travel_effect_destabalized": "Hyperspace_Vasari_Frigate_Travel_Unstable",
+                    "exit_effect": "vasari_cruiser_portal_exit",
+                    "exit_sound": "HYPERSPACE_EXIT",
+                    "charge_sound": "HYPERSPACE_CHARGEUP",
+                    "enter_sound": "HYPERSPACE_ENTRY"
+                },
+                "shield_effect": "vasari_carrier_cruiser",
+                "effect_alias_bindings": [
+                    [
+                        "vasari_colony_capital_ship_beam_weapon_beam",
+                        {
+                            "beam": "vasari_medium_beam",
+                            "sounds": [
+                                "WEAPON_PHASECAPITALFLASHBEAMHEAVY_TRAVEL",
+                                "WEAPON_PHASECAPITALFLASHBEAMHEAVY_TRAVEL_ALT1"
+                            ]
+                        }
+                    ],
+                    [
+                        "vasari_colony_capital_ship_beam_weapon_hit_hull",
+                        {
+                            "particle_effect": "vasari_medium_Beam_impact"
+                        }
+                    ],
+                    [
+                        "vasari_colony_capital_ship_beam_weapon_hit_shield",
+                        {
+                            "particle_effect": "vasari_medium_Beam_impact"
+                        }
+                    ],
+                    [
+                        "vasari_colony_capital_ship_beam_weapon_muzzle",
+                        {
+                            "particle_effect": "vasari_medium_Beam_muzzle"
+                        }
+                    ]
+                ]
+            },
+            "sounds": {
+                "move_sounds": {
+                    "engine": "ENGINE_PHASECRUISER",
+                    "hyperspace_travel": "HYPERSPACE_TRAVEL"
+                },
+                "dialogue": {
+                    "spawned": [
+                        "FRIGATE_PHASECARRIER_ONCREATION"
+                    ],
+                    "selected": [
+                        "FRIGATE_PHASECARRIER_ONSELECTED_0",
+                        "FRIGATE_PHASECARRIER_ONSELECTED_1",
+                        "FRIGATE_PHASECARRIER_ONSELECTED_2"
+                    ],
+                    "order_issued": [
+                        "FRIGATE_PHASECARRIER_ONGENERALORDERISSUED_0",
+                        "FRIGATE_PHASECARRIER_ONGENERALORDERISSUED_1",
+                        "FRIGATE_PHASECARRIER_ONGENERALORDERISSUED_2"
+                    ],
+                    "hyperspace_charge_started": [
+                        "FRIGATE_PHASECARRIER_ONSTARTPHASEJUMP_0"
+                    ]
+                }
+            },
+            "death_sequence_group": "frigate0"
+        }
+    ]
+}
