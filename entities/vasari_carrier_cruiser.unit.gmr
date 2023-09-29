@@ -1,16 +1,15 @@
 {
-    // I'd really like to use this, but these angles are nonsense.
-    // "attack": {
-    //     "attack_pattern_definitions": [
-    //         {
-    //             "type": "circle_strafe",
-    //             "angle_range": [
-    //                 -180,
-    //                 180
-    //             ]
-    //         }
-    //     ]
-    // },
+    "attack": {
+        "attack_pattern_definitions": [
+            {
+                "type": "circle_strafe",
+                "angle_range": [
+                    -20,
+                    20
+                ]
+            }
+        ]
+    },
     "ai": {
         "priority_bonus_per_attack_target_type": {
             "fighter_strikecraft": 5,
