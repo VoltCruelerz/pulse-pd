@@ -39,5 +39,6 @@
         "muzzle_positions": [
             [-0.04715, 4.61686, 8.28701]
         ]
-    }
+    },
+    "attack_target_type_groups": ["torpedo_strikecraft"]
 }

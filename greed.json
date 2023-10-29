@@ -3,8 +3,8 @@
     "author": "Volt Cruelerz",
     "url": "https://github.com/VoltCruelerz/constituent-components",
     "description": "Adds Pulse Beams as a PD weapon.",
-    "version": "2.0.0",
-    "sinsVersion": "1.16.10.0",
+    "version": "3.0.0",
+    "sinsVersion": "1.17.4.0",
     "greedVersion": "2.0.0",
     "dependencies": [],
     "conflicts": []

@@ -3,29 +3,13 @@
         "attack_pattern_definitions": [
             {
                 "type": "circle_strafe",
-                "angle_range": [
-                    -20,
-                    20
-                ]
+                "angle_range_off_gravity_well_plane": [-20.0, 20.0]
             }
         ]
     },
     "ai": {
-        "priority_bonus_per_attack_target_type": {
-            "fighter_strikecraft": 5,
-            "bomber_strikecraft": 5,
-            "torpedo": 4
-        },
         "behaviors": [
             "auto_attack_all"
-        ],
-        "targets_to_ignore_filter_id": "strikecraft_and_torpedo_units"
-    },
-    "ai_attack_target": {
-        "attack_priority": 50,
-        "is_always_a_threat": true,
-        "attack_target_types": [
-            "carrier_cruiser"
         ]
     },
     "weapons": {
