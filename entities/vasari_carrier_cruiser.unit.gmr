@@ -1,11 +1,10 @@
 {
     "attack": {
-        "attack_pattern_definitions": [
-            {
-                "type": "circle_strafe",
-                "angle_range_off_gravity_well_plane": [-20.0, 20.0]
-            }
-        ]
+        "attack_pattern":
+        {
+            "type": "circle_strafe",
+            "angle_range_off_gravity_well_plane": [-20.0, 20.0]
+        }
     },
     "ai": {
         "behaviors": [
